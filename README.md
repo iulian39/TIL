@@ -6,6 +6,8 @@
 
 `git push --set-upstream origin BRANCHNAME`
 
+`git reset origin --hard`
+
 `git pull origin your_branch` # fetch and merge in one operation
 
 `git stash`
