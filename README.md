@@ -12,6 +12,8 @@
 
 `git stash pop`
 
+Oppsite of `git a .` -> `git reset .`
+
 ### Ammend
 `git commit --amend `
 
