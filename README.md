@@ -14,6 +14,8 @@
 
 Oppsite of `git a .` -> `git reset .`
 
+`git reset HEAD^` -> undo commit and get the files back
+
 ### Ammend
 `git commit --amend `
 
