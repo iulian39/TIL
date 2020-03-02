@@ -48,3 +48,9 @@ Then you can see it on  http://localhost:8070/Index.html
 ## Security
 `SELECT * from users where username='admin' and (CASE WHEN (substr(key, 1, 1) = 'a') then LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(200000000)))) else 1 end); --`
 this basically checks if there is the specified letter in the key at a given position. if there is, we do some operation (use sleep if not sqlite3)
+
+## CORS
+For front-end, header  { crossdomain: true }
+For back-end, Access-Control-Allow-Origin in response
+
+
