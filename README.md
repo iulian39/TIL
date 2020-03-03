@@ -54,6 +54,10 @@ For front-end, header  { crossdomain: true }
 For back-end, Access-Control-Allow-Origin in response
 
 ## React
+### React HOC
+In simple terms, we could say that a Higher Order Component is a function that accepts a component as parameter and returns another component that wraps it.
+
+`export default HOC(App);`
 ### React children
 
 `<Parent>   <p> Child </p>  </Parent>`
