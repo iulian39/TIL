@@ -1,5 +1,21 @@
 # TIL
 
+- [GIT](#git)
+  * [Ammend](#ammend)
+  * [Change remote link](#change-remote-link)
+- [Docker](#docker)
+  * [Starting a docker-compose.yml file](#starting-a-docker-composeyml-file)
+  * [Building a docker image](#building-a-docker-image)
+- [Security](#security)
+- [CORS](#cors)
+- [React](#react)
+  * [React HOC](#react-hoc)
+  * [React children](#react-children)
+    + [Other](#other)
+  * [Redux Middleware](#redux-middleware)
+  * [Redux Selector](#redux-selector)
+  * [Redux thunk](#redux-thunk)
+
 ## GIT
 
 `git checkout -b NEWBRANCH`
