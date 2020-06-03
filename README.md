@@ -24,7 +24,7 @@
 
 `git reset origin --hard`
 
-`git pull origin your_branch` # fetch and merge in one operation
+`git pull origin master` # fetch and merge in one operation when you are on your branch
 
 `git stash`
 
