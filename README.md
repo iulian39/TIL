@@ -34,6 +34,8 @@ Oppsite of `git a .` -> `git reset .`
 
 `git reset HEAD^` -> undo commit and get the files back
 
+`git checkout master -- <file name>` -> revert certain file with the master's version
+
 ### Ammend
 `git commit --amend `
 
