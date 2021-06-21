@@ -36,7 +36,7 @@ Oppsite of `git a .` -> `git reset .`
 
 `git checkout master -- <file name>` -> revert certain file with the master's version
 
-# Note: Any changes not committed will be lost.
+##### Note: Any changes not committed will be lost.
 
 `git branch newbranch`      # Create a new branch, saving the desired commits
 
