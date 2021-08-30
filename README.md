@@ -58,6 +58,11 @@ Oppsite of `git a .` -> `git reset .`
 
 `git pull # to verify`
 
+### Get changes from another branch to master without commiting
+You can use `git diff <another-branch> ^HEAD` to print a diff of the changes that are in "another-branch", but not in your current branch (HEAD). And then apply those changes to the current index by passing them to `git apply -`
+
+`git diff <another-branch> ^HEAD | git apply -`
+
 ## Docker
 ### Starting a docker-compose.yml file
 `docker-compose pull`
