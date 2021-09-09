@@ -63,6 +63,9 @@ You can use `git diff <another-branch> ^HEAD` to print a diff of the changes tha
 
 `git diff <another-branch> ^HEAD | git apply -`
 
+### When Gitlab Failed to squash. Should be done manually..  
+https://blog.oddbit.com/post/2019-06-17-avoid-rebase-hell-squashing-wi/
+
 ## Docker
 ### Starting a docker-compose.yml file
 `docker-compose pull`
