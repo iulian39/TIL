@@ -68,12 +68,19 @@ https://blog.oddbit.com/post/2019-06-17-avoid-rebase-hell-squashing-wi/
 
 ## Docker
 Build an image: `docker build --tag imageName:1.0.0 .` - builds an image from DockerFile
+
 Show images: `docker images`
+
 Show containers: `docker ps`, show previous containers as well: `docker ps -a`
+
 Login to docker repo: `docker login repo_url`
+
 Push image: `docker push imageName`
+
 Pull image: `docker pull imageName`
+
 Inspect image: `docker inspect imageName`
+
 Run image: `docker run imageName`
 
 
