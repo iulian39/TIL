@@ -3,6 +3,7 @@
 - [GIT](#git)
   * [Ammend](#ammend)
   * [Change remote link](#change-remote-link)
+  * [Manual squash](#when-gitlab-failed-to-squash-should-be-done-manually)
 - [Docker](#docker)
   * [Starting a docker-compose.yml file](#starting-a-docker-composeyml-file)
   * [Building a docker image](#building-a-docker-image)
