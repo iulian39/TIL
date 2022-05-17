@@ -85,9 +85,22 @@ Run image: `docker run imageName`
 
 
 ### Starting a docker-compose.yml file
-`docker-compose pull`
+`docker-compose pull` - pulls an image associated with a service defined in a docker-compose.yml 
 
-`docker-compose up -d`
+`docker-compose up -d` - use without -d to see console output
+
+`docker-compose ps` - see running processes
+
+Run command inside a docker container using docker-compose
+
+```
+ version: "3.7"
+
+ services:
+   app:
+     image: debian-curl:1.0.0
+     command: curl https://artifactory.danskenet.net/ui/packages
+```
 
 ### Building a docker image
 `docker build . -t NAME`
