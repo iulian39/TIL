@@ -66,6 +66,49 @@ You can use `git diff <another-branch> ^HEAD` to print a diff of the changes tha
 ### When Gitlab Failed to squash. Should be done manually..  
 https://blog.oddbit.com/post/2019-06-17-avoid-rebase-hell-squashing-wi/
 
+1) Check out a new branch based on master (or the appropriate base branch if your feature branch isn’t based on master):
+
+```
+git checkout -b work master
+```
+
+(This creates a new branch called work and makes that your current branch.)
+
+2) Bring in the changes from your messy pull request using git merge --squash:
+
+```
+git merge --squash my_feature
+```
+
+This brings in all the changes from your my_feature branch and stages them, but does not create any commits.
+
+3) Commit the changes with an appropriate commit message:
+
+```
+git commit
+```
+
+At this point, your work branch should be identical to the original my_feature branch (running git diff my_feature_branch should not show any changes), but it will have only a single commit after master.
+
+4) Return to your feature branch and reset it to the squashed version:
+
+```
+git checkout my_feature
+git reset --hard work
+```
+
+5) Update your pull request:
+
+```
+git push -f
+```
+
+6) Optionally clean up your work branch:
+
+```
+git branch -D work
+```
+
 ## Docker
 Build an image: `docker build --tag imageName:1.0.0 .` - builds an image from DockerFile
 
