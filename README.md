@@ -135,15 +135,20 @@ Run image: `docker run imageName`
 
 `docker-compose ps` - see running processes
 
-Run command inside a docker container using docker-compose
+Run command(s) inside a docker container using docker-compose
 
 ```
  version: "3.7"
 
  services:
    app:
-     image: debian-curl:1.0.0
-     command: curl https://artifactory.danskenet.net/ui/packages
+     image: test:1.0.0
+     command: bash -c "curl https://artifactory.danskenet.net/ui/packages && 
+      echo 'hello' && 
+      node -v && 
+      npm -v &&
+      ls"
+
 ```
 
 ### Building a docker image
