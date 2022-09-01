@@ -111,7 +111,7 @@ git branch -D work
 ```
 
 ## Docker
-Build an image: `docker build --pull --no-cache --tag imageName:1.0.0 .` - builds an image from DockerFile
+Build an image: `docker build --pull --no-cache --tag image_name:1.0.0 .` - builds an image from DockerFile
 
 `--no-cache` - This will force rebuilding of layers already available
 
