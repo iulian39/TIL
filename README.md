@@ -145,13 +145,16 @@ Run command(s) inside a docker container using docker-compose
  version: "3.7"
 
  services:
-   app:
-     image: test:1.0.0
-     command: bash -c "curl https://artifactory.danskenet.net/ui/packages && 
-      echo 'hello' && 
-      node -v && 
-      npm -v &&
-      ls"
+   my-db-app:  # workdir from Docker file
+    image: test_android_latest:1.0.1
+    command: 
+      - /bin/sh
+      - -c
+      - |
+        echo "baeldung"
+        echo "docker"
+        pwd
+        ...
 
 ```
 
