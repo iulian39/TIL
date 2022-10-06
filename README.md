@@ -136,6 +136,10 @@ Run image: `docker run imageName`
 
 `docker pull db-docker-e4e4-app-build-platform.artifactory.danskenet.net/android:1.0.0` 
 
+### SSH into docker image
+
+`docker run --name does_not_matter_ssh -i -t image_name`
+
 ### Starting a docker-compose.yml file
 `docker-compose pull` - pulls an image associated with a service defined in a docker-compose.yml 
 
