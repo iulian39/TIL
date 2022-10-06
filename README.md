@@ -131,6 +131,10 @@ Inspect image: `docker inspect imageName`
 
 Run image: `docker run imageName`
 
+### Docker login to artifactory
+`docker login db-docker-e4e4-app-build-platform.artifactory.danskenet.net`  
+
+`docker pull db-docker-e4e4-app-build-platform.artifactory.danskenet.net/android:1.0.0` 
 
 ### Starting a docker-compose.yml file
 `docker-compose pull` - pulls an image associated with a service defined in a docker-compose.yml 
