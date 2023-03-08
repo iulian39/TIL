@@ -277,3 +277,5 @@ export const requestBookAndSimilars = (id) => ( // elegant way to dispatch the 2
 )
 
 ```
+
+Create documentation page that can be extended with React: https://docusaurus.io/ 
